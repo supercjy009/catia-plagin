@@ -1,0 +1,50 @@
+version: 0.0.1
+type: plugin
+author: tecwin
+name: catia-plugin
+label:
+  en_US: catia-plugin
+  ja_JP: catia-plugin
+  zh_Hans: catia-plugin
+  pt_BR: catia-plugin
+description:
+  en_US: catia modeling plugin
+  ja_JP: catia modeling plugin
+  zh_Hans: catia modeling plugin
+  pt_BR: catia modeling plugin
+icon: icon.svg
+icon_dark: icon-dark.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: true
+      llm: true
+      text_embedding: false
+      rerank: false
+      tts: false
+      speech2text: false
+      moderation: false
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/catia-plugin.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: null
+created_at: 2025-08-25T19:06:11.1117414+08:00
+privacy: PRIVACY.md
+verified: false

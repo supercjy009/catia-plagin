@@ -1,0 +1,30 @@
+identity:
+  name: "catia-plugin"
+  author: "tecwin"
+  label:
+    en_US: "catia-plugin"
+    zh_Hans: "catia-plugin"
+    pt_BR: "catia-plugin"
+description:
+  human:
+    en_US: "catia modeling plugin"
+    zh_Hans: "catia modeling plugin"
+    pt_BR: "catia modeling plugin"
+  llm: "catia modeling plugin"
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: "catia modeling plugin"
+      zh_Hans: "catia modeling plugin"
+      pt_BR: "catia modeling plugin"
+    llm_description: "catia modeling plugin"
+    form: llm
+extra:
+  python:
+    source: tools/catia-plugin.py
