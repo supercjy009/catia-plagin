@@ -1,0 +1,58 @@
+identity:
+  name: "catia-model"
+  author: "tecwin"
+  label:
+    en_US: "modeling"
+    zh_Hans: "模板调用"
+    pt_BR: "modeling"
+  icon: "icon-discord.svg"
+description:
+  human:
+    en_US: "modeling"
+    zh_Hans: "模板调用"
+    pt_BR: "modeling"
+  llm: "modeling"
+icon: "icons8-discord.svg"
+parameters:
+  - name: Parameter
+    type: string
+    required: true
+    label:
+      en_US: Parameter values
+      zh_Hans: 参数值
+      pt_BR: Parameter values
+    human_description:
+      en_US: "parameter"
+      zh_Hans: "参数值"
+      pt_BR: "parameter"
+    llm_description: "parameter"
+    form: form
+  - name: Template
+    type: select
+    required: true
+    options:
+      - label:
+          en_US: "创建基本结构"
+          zh_Hans: "创建基本结构"
+        value: 创建基本结构
+      - label:
+          en_US: "创建加强筋结构"
+          zh_Hans: "创建加强筋结构"
+        value: 创建加强筋结构
+      - label:
+          en_US: "裁切边界"
+          zh_Hans: "裁切边界"
+        value: 裁切边界
+    label:
+      en_US: Select template
+      zh_Hans: 选择模板
+      pt_BR: Select template
+    human_description:
+      en_US: "Select template"
+      zh_Hans: "选择模板"
+      pt_BR: "Select template"
+    llm_description: "Select template"
+    form: form
+extra:
+  python:
+    source: tools/catia-model.py

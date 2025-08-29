@@ -54,7 +54,8 @@ identity:
 #         en_US: "Access Token"
 
 tools:
-  - tools/catia-plugin.yaml
+  - tools/catia-param-setting.yaml
+  - tools/catia-model.yaml
 extra:
   python:
     source: provider/catia-plugin.py

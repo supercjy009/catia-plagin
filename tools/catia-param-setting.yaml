@@ -1,0 +1,45 @@
+identity:
+  name: "catia-param-setting"
+  author: "tecwin"
+  label:
+    en_US: "catia-param-setting"
+    zh_Hans: "参数设置"
+    pt_BR: "catia-param-setting"
+  icon: "icons8-discord.svg"
+description:
+  human:
+    en_US: "catia modeling plugin"
+    zh_Hans: "参数设置"
+    pt_BR: "catia modeling plugin"
+  llm: "catia modeling plugin"
+icon: "icons8-discord.svg"
+parameters:
+  - name: ParameterName
+    type: string
+    required: true
+    label:
+      en_US: Parameter name
+      zh_Hans: 参数名
+      pt_BR: Parameter name
+    human_description:
+      en_US: "parameter name"
+      zh_Hans: "参数名"
+      pt_BR: "parameter name"
+    llm_description: "parameter name"
+    form: llm
+  - name: ParameterValue
+    type: string
+    required: true
+    label:
+      en_US: Parameter values
+      zh_Hans: 参数值
+      pt_BR: Parameter values
+    human_description:
+      en_US: "parameter values"
+      zh_Hans: "参数值"
+      pt_BR: "parameter values"
+    llm_description: "parameter values"
+    form: llm
+extra:
+  python:
+    source: tools/catia-param-setting.py
