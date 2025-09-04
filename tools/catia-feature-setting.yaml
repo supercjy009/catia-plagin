@@ -1,0 +1,44 @@
+identity:
+  name: "catia-feature-setting"
+  author: "tecwin"
+  label:
+    en_US: "catia-feature-setting"
+    zh_Hans: "特征设置"
+    pt_BR: "catia-feature-setting"
+  icon: "icons8-discord.svg"
+description:
+  human:
+    en_US: "catia feature setting"
+    zh_Hans: "特征设置"
+    pt_BR: "catia feature setting"
+  llm: "catia feature setting"
+parameters:
+  - name: FeatureName
+    type: string
+    required: true
+    label:
+      en_US: Feature name
+      zh_Hans: 特征名
+      pt_BR: Feature name
+    human_description:
+      en_US: "Feature name"
+      zh_Hans: "特征名"
+      pt_BR: "Feature name"
+    llm_description: "Feature name"
+    form: llm
+  - name: FeatureValue
+    type: string
+    required: true
+    label:
+      en_US: Feature values
+      zh_Hans: 特征值
+      pt_BR: Feature values
+    human_description:
+      en_US: "Feature values"
+      zh_Hans: "特征值"
+      pt_BR: "Feature values"
+    llm_description: "Feature values"
+    form: llm
+extra:
+  python:
+    source: tools/catia-feature-setting.py

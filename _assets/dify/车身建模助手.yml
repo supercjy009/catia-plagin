@@ -1,0 +1,2689 @@
+app:
+  description: ''
+  icon: female-mechanic
+  icon_background: '#FFEAD5'
+  mode: advanced-chat
+  name: 车身建模助手
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: package
+  value:
+    plugin_unique_identifier: tecwin/catia-plugin:0.0.1@84c7f046c3f2500616cce2da278d35fe04462186a4bae287996b2635044cea96
+kind: app
+version: 0.3.1
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: tool
+      id: 1756993355918-source-1756993460079-target
+      source: '1756993355918'
+      sourceHandle: source
+      target: '1756993460079'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: start
+        targetType: tool
+      id: 1756993355918-source-17569934685570-target
+      source: '1756993355918'
+      sourceHandle: source
+      target: '17569934685570'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: start
+        targetType: tool
+      id: 1756993355918-source-17569934699710-target
+      source: '1756993355918'
+      sourceHandle: source
+      target: '17569934699710'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: start
+        targetType: tool
+      id: 1756993355918-source-17569934715940-target
+      source: '1756993355918'
+      sourceHandle: source
+      target: '17569934715940'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: start
+        targetType: tool
+      id: 1756993355918-source-17569934731870-target
+      source: '1756993355918'
+      sourceHandle: source
+      target: '17569934731870'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: tool
+      id: 1756993355918-source-1756993521566-target
+      source: '1756993355918'
+      sourceHandle: source
+      target: '1756993521566'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: start
+        targetType: tool
+      id: 1756993355918-source-17569935976850-target
+      source: '1756993355918'
+      sourceHandle: source
+      target: '17569935976850'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: start
+        targetType: tool
+      id: 1756993355918-source-17569935996400-target
+      source: '1756993355918'
+      sourceHandle: source
+      target: '17569935996400'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 1756993460079-source-1756993678864-target
+      selected: false
+      source: '1756993460079'
+      sourceHandle: source
+      target: '1756993678864'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569934685570-source-1756993678864-target
+      selected: false
+      source: '17569934685570'
+      sourceHandle: source
+      target: '1756993678864'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569934699710-source-1756993678864-target
+      selected: false
+      source: '17569934699710'
+      sourceHandle: source
+      target: '1756993678864'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569934715940-source-1756993678864-target
+      selected: false
+      source: '17569934715940'
+      sourceHandle: source
+      target: '1756993678864'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569934731870-source-1756993678864-target
+      selected: false
+      source: '17569934731870'
+      sourceHandle: source
+      target: '1756993678864'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 1756993521566-source-1756993678864-target
+      selected: false
+      source: '1756993521566'
+      sourceHandle: source
+      target: '1756993678864'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569935976850-source-1756993678864-target
+      selected: false
+      source: '17569935976850'
+      sourceHandle: source
+      target: '1756993678864'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569935996400-source-1756993678864-target
+      selected: false
+      source: '17569935996400'
+      sourceHandle: source
+      target: '1756993678864'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: if-else
+      id: 1756993678864-source-1756993838860-target
+      selected: false
+      source: '1756993678864'
+      sourceHandle: source
+      target: '1756993838860'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: answer
+      id: 1756993838860-true-1756993869751-target
+      selected: false
+      source: '1756993838860'
+      sourceHandle: 'true'
+      target: '1756993869751'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569939022800-source-1756994044223-target
+      selected: false
+      source: '17569939022800'
+      sourceHandle: source
+      target: '1756994044223'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 1756993838860-false-17569939022800-target
+      selected: false
+      source: '1756993838860'
+      sourceHandle: 'false'
+      target: '17569939022800'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 1756993838860-false-17569939029490-target
+      selected: false
+      source: '1756993838860'
+      sourceHandle: 'false'
+      target: '17569939029490'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 1756993838860-false-17569939047420-target
+      selected: false
+      source: '1756993838860'
+      sourceHandle: 'false'
+      target: '17569939047420'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 1756993838860-false-17569939067510-target
+      selected: false
+      source: '1756993838860'
+      sourceHandle: 'false'
+      target: '17569939067510'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 1756993838860-false-17569939092450-target
+      selected: false
+      source: '1756993838860'
+      sourceHandle: 'false'
+      target: '17569939092450'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 1756993838860-false-17569939916900-target
+      selected: false
+      source: '1756993838860'
+      sourceHandle: 'false'
+      target: '17569939916900'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 1756993838860-false-17569939951040-target
+      selected: false
+      source: '1756993838860'
+      sourceHandle: 'false'
+      target: '17569939951040'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569939029490-source-1756994044223-target
+      selected: false
+      source: '17569939029490'
+      sourceHandle: source
+      target: '1756994044223'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569939047420-source-1756994044223-target
+      source: '17569939047420'
+      sourceHandle: source
+      target: '1756994044223'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569939067510-source-1756994044223-target
+      source: '17569939067510'
+      sourceHandle: source
+      target: '1756994044223'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569939092450-source-1756994044223-target
+      source: '17569939092450'
+      sourceHandle: source
+      target: '1756994044223'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569939916900-source-1756994044223-target
+      source: '17569939916900'
+      sourceHandle: source
+      target: '1756994044223'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569939951040-source-1756994044223-target
+      source: '17569939951040'
+      sourceHandle: source
+      target: '1756994044223'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: if-else
+      id: 1756994044223-source-17569942174110-target
+      source: '1756994044223'
+      sourceHandle: source
+      target: '17569942174110'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: answer
+      id: 17569942174110-true-1756993869751-target
+      source: '17569942174110'
+      sourceHandle: 'true'
+      target: '1756993869751'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 17569942174110-false-17569942760340-target
+      source: '17569942174110'
+      sourceHandle: 'false'
+      target: '17569942760340'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 17569942174110-false-17569942810530-target
+      source: '17569942174110'
+      sourceHandle: 'false'
+      target: '17569942810530'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 17569942174110-false-17569942831950-target
+      source: '17569942174110'
+      sourceHandle: 'false'
+      target: '17569942831950'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569942760340-source-17569943124220-target
+      source: '17569942760340'
+      sourceHandle: source
+      target: '17569943124220'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569942810530-source-17569943124220-target
+      source: '17569942810530'
+      sourceHandle: source
+      target: '17569943124220'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: tool
+      id: 17569942831950-source-17569943124220-target
+      source: '17569942831950'
+      sourceHandle: source
+      target: '17569943124220'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: if-else
+      id: 17569943124220-source-17569944207730-target
+      source: '17569943124220'
+      sourceHandle: source
+      target: '17569944207730'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: answer
+      id: 17569944207730-true-1756993869751-target
+      source: '17569944207730'
+      sourceHandle: 'true'
+      target: '1756993869751'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: answer
+      id: 17569944207730-false-1756994459515-target
+      source: '17569944207730'
+      sourceHandle: 'false'
+      target: '1756994459515'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 开始
+        type: start
+        variables: []
+      height: 53
+      id: '1756993355918'
+      position:
+        x: -345.9999999999999
+        y: -10.262176602451618
+      positionAbsolute:
+        x: -345.9999999999999
+        y: -10.262176602451618
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          label:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          llm_description: Feature name
+          max: null
+          min: null
+          name: FeatureName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          label:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          llm_description: Feature values
+          max: null
+          min: null
+          name: FeatureValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          FeatureName: ''
+          FeatureValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 对象赋值 | SurfaceOrientation-CAS
+        tool_configurations: {}
+        tool_description: 特征设置
+        tool_label: 特征设置
+        tool_name: catia-feature-setting
+        tool_node_version: '2'
+        tool_parameters:
+          FeatureName:
+            type: mixed
+            value: SurfaceOrientation-CAS
+          FeatureValue:
+            type: mixed
+            value: Part_Information/Basic/SurfaceOrientation-CAS
+        type: tool
+      height: 53
+      id: '1756993460079'
+      position:
+        x: 17.000000000000114
+        y: -179.63901582154574
+      positionAbsolute:
+        x: 17.000000000000114
+        y: -179.63901582154574
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          label:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          llm_description: Feature name
+          max: null
+          min: null
+          name: FeatureName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          label:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          llm_description: Feature values
+          max: null
+          min: null
+          name: FeatureValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          FeatureName: ''
+          FeatureValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 对象赋值 | SurfaceOrientation-Matching1
+        tool_configurations: {}
+        tool_description: 特征设置
+        tool_label: 特征设置
+        tool_name: catia-feature-setting
+        tool_node_version: '2'
+        tool_parameters:
+          FeatureName:
+            type: mixed
+            value: SurfaceOrientation-Matching1
+          FeatureValue:
+            type: mixed
+            value: Part_Information/Basic/SurfaceOrientation-Matching1
+        type: tool
+      height: 53
+      id: '17569934685570'
+      position:
+        x: 12.000000000000114
+        y: -97.26217660245162
+      positionAbsolute:
+        x: 12.000000000000114
+        y: -97.26217660245162
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          label:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          llm_description: Feature name
+          max: null
+          min: null
+          name: FeatureName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          label:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          llm_description: Feature values
+          max: null
+          min: null
+          name: FeatureValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          FeatureName: ''
+          FeatureValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 对象赋值 | SurfaceOrientation-Matching2
+        tool_configurations: {}
+        tool_description: 特征设置
+        tool_label: 特征设置
+        tool_name: catia-feature-setting
+        tool_node_version: '2'
+        tool_parameters:
+          FeatureName:
+            type: mixed
+            value: SurfaceOrientation-Matching2
+          FeatureValue:
+            type: mixed
+            value: Part_Information/Basic/SurfaceOrientation-Matching2
+        type: tool
+      height: 53
+      id: '17569934699710'
+      position:
+        x: 17.000000000000114
+        y: -24.262176602451618
+      positionAbsolute:
+        x: 17.000000000000114
+        y: -24.262176602451618
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          label:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          llm_description: Feature name
+          max: null
+          min: null
+          name: FeatureName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          label:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          llm_description: Feature values
+          max: null
+          min: null
+          name: FeatureValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          FeatureName: ''
+          FeatureValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 对象赋值 | ReferencePlane
+        tool_configurations: {}
+        tool_description: 特征设置
+        tool_label: 特征设置
+        tool_name: catia-feature-setting
+        tool_node_version: '2'
+        tool_parameters:
+          FeatureName:
+            type: mixed
+            value: ReferencePlane
+          FeatureValue:
+            type: mixed
+            value: Part_Information/Referen point/ReferencePlane
+        type: tool
+      height: 53
+      id: '17569934715940'
+      position:
+        x: 17.000000000000114
+        y: 52.73782339754834
+      positionAbsolute:
+        x: 17.000000000000114
+        y: 52.73782339754834
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          label:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          llm_description: Feature name
+          max: null
+          min: null
+          name: FeatureName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          label:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          llm_description: Feature values
+          max: null
+          min: null
+          name: FeatureValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          FeatureName: ''
+          FeatureValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 对象赋值 | ReferencePoint
+        tool_configurations: {}
+        tool_description: 特征设置
+        tool_label: 特征设置
+        tool_name: catia-feature-setting
+        tool_node_version: '2'
+        tool_parameters:
+          FeatureName:
+            type: mixed
+            value: ReferencePoint
+          FeatureValue:
+            type: mixed
+            value: Part_Information/Referen point/ReferencePoint
+        type: tool
+      height: 53
+      id: '17569934731870'
+      position:
+        x: 17.000000000000114
+        y: 134.7378233975483
+      positionAbsolute:
+        x: 17.000000000000114
+        y: 134.7378233975483
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter name
+            ja_JP: parameter name
+            pt_BR: parameter name
+            zh_Hans: 参数名
+          label:
+            en_US: Parameter name
+            ja_JP: Parameter name
+            pt_BR: Parameter name
+            zh_Hans: 参数名
+          llm_description: parameter name
+          max: null
+          min: null
+          name: ParameterName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter values
+            ja_JP: parameter values
+            pt_BR: parameter values
+            zh_Hans: 参数值
+          label:
+            en_US: Parameter values
+            ja_JP: Parameter values
+            pt_BR: Parameter values
+            zh_Hans: 参数值
+          llm_description: parameter values
+          max: null
+          min: null
+          name: ParameterValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          ParameterName: ''
+          ParameterValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 参数设置 | Distance_ZDir
+        tool_configurations: {}
+        tool_description: 参数设置
+        tool_label: 参数设置
+        tool_name: catia-param-setting
+        tool_node_version: '2'
+        tool_parameters:
+          ParameterName:
+            type: mixed
+            value: Distance_ZDir
+          ParameterValue:
+            type: mixed
+            value: 300 mm
+        type: tool
+      height: 53
+      id: '1756993521566'
+      position:
+        x: 12.000000000000114
+        y: 213.7378233975483
+      positionAbsolute:
+        x: 12.000000000000114
+        y: 213.7378233975483
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter name
+            ja_JP: parameter name
+            pt_BR: parameter name
+            zh_Hans: 参数名
+          label:
+            en_US: Parameter name
+            ja_JP: Parameter name
+            pt_BR: Parameter name
+            zh_Hans: 参数名
+          llm_description: parameter name
+          max: null
+          min: null
+          name: ParameterName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter values
+            ja_JP: parameter values
+            pt_BR: parameter values
+            zh_Hans: 参数值
+          label:
+            en_US: Parameter values
+            ja_JP: Parameter values
+            pt_BR: Parameter values
+            zh_Hans: 参数值
+          llm_description: parameter values
+          max: null
+          min: null
+          name: ParameterValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          ParameterName: ''
+          ParameterValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 参数设置 | Thickness_Plate
+        tool_configurations: {}
+        tool_description: 参数设置
+        tool_label: 参数设置
+        tool_name: catia-param-setting
+        tool_node_version: '2'
+        tool_parameters:
+          ParameterName:
+            type: mixed
+            value: Thickness_Plate
+          ParameterValue:
+            type: mixed
+            value: 2.8mm
+        type: tool
+      height: 53
+      id: '17569935976850'
+      position:
+        x: 17.000000000000114
+        y: 289.7378233975483
+      positionAbsolute:
+        x: 17.000000000000114
+        y: 289.7378233975483
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter name
+            ja_JP: parameter name
+            pt_BR: parameter name
+            zh_Hans: 参数名
+          label:
+            en_US: Parameter name
+            ja_JP: Parameter name
+            pt_BR: Parameter name
+            zh_Hans: 参数名
+          llm_description: parameter name
+          max: null
+          min: null
+          name: ParameterName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter values
+            ja_JP: parameter values
+            pt_BR: parameter values
+            zh_Hans: 参数值
+          label:
+            en_US: Parameter values
+            ja_JP: Parameter values
+            pt_BR: Parameter values
+            zh_Hans: 参数值
+          llm_description: parameter values
+          max: null
+          min: null
+          name: ParameterValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          ParameterName: ''
+          ParameterValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 参数设置 | Angle_ToReferencePlane
+        tool_configurations: {}
+        tool_description: 参数设置
+        tool_label: 参数设置
+        tool_name: catia-param-setting
+        tool_node_version: '2'
+        tool_parameters:
+          ParameterName:
+            type: mixed
+            value: Angle_ToReferencePlane
+          ParameterValue:
+            type: mixed
+            value: 15 deg
+        type: tool
+      height: 53
+      id: '17569935996400'
+      position:
+        x: 17.000000000000114
+        y: 369.73782339754825
+      positionAbsolute:
+        x: 17.000000000000114
+        y: 369.73782339754825
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: true
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: parameter
+            ja_JP: parameter
+            pt_BR: parameter
+            zh_Hans: 参数值
+          label:
+            en_US: Parameter values
+            ja_JP: Parameter values
+            pt_BR: Parameter values
+            zh_Hans: 参数值
+          llm_description: parameter
+          max: null
+          min: null
+          name: Parameter
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: OutputLocation
+            ja_JP: OutputLocation
+            pt_BR: OutputLocation
+            zh_Hans: OutputLocation
+          label:
+            en_US: Output Location
+            ja_JP: Output Location
+            pt_BR: Output Location
+            zh_Hans: Output Location
+          llm_description: OutputLocation
+          max: null
+          min: null
+          name: OutputLocation
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: Select template
+            ja_JP: Select template
+            pt_BR: Select template
+            zh_Hans: 选择模板
+          label:
+            en_US: Select template
+            ja_JP: Select template
+            pt_BR: Select template
+            zh_Hans: 选择模板
+          llm_description: Select template
+          max: null
+          min: null
+          name: Template
+          options:
+          - icon: ''
+            label:
+              en_US: 创建基本结构
+              ja_JP: 创建基本结构
+              pt_BR: 创建基本结构
+              zh_Hans: 创建基本结构
+            value: 创建基本结构
+          - icon: ''
+            label:
+              en_US: 创建加强筋结构
+              ja_JP: 创建加强筋结构
+              pt_BR: 创建加强筋结构
+              zh_Hans: 创建加强筋结构
+            value: 创建加强筋结构
+          - icon: ''
+            label:
+              en_US: 裁切边界
+              ja_JP: 裁切边界
+              pt_BR: 裁切边界
+              zh_Hans: 裁切边界
+            value: 裁切边界
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: select
+        params:
+          OutputLocation: ''
+          Parameter: ''
+          Template: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 模板调用 | 创建基本结构
+        tool_configurations:
+          OutputLocation:
+            type: mixed
+            value: BEAM-FTR TEMPLE/Untrimed_Surface/Basic_Surface
+          Parameter:
+            type: mixed
+            value: '{{#17569935996400.text#}}{{#17569935976850.text#}}{{#17569934731870.text#}}{{#17569934715940.text#}}{{#17569934699710.text#}}{{#17569934685570.text#}}{{#1756993460079.text#}}'
+          Template:
+            type: constant
+            value: 创建基本结构
+        tool_description: 模板调用
+        tool_label: 模板调用
+        tool_name: catia-model
+        tool_node_version: '2'
+        tool_parameters: {}
+        type: tool
+      height: 141
+      id: '1756993678864'
+      position:
+        x: 412
+        y: 91.00000000000003
+      positionAbsolute:
+        x: 412
+        y: 91.00000000000003
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: aecbcb73-2e3d-4fc9-813f-127390d803b9
+            value: ERROR
+            varType: string
+            variable_selector:
+            - '1756993678864'
+            - text
+          id: 'true'
+          logical_operator: and
+        desc: ''
+        selected: false
+        title: 完成判断 | 创建基本结构
+        type: if-else
+      height: 125
+      id: '1756993838860'
+      position:
+        x: 752.89291416276
+        y: 91.00000000000003
+      positionAbsolute:
+        x: 752.89291416276
+        y: 91.00000000000003
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        answer: 未完成操作
+        desc: ''
+        selected: false
+        title: 报错回复
+        type: answer
+        variables: []
+      height: 101
+      id: '1756993869751'
+      position:
+        x: 1616.3456936738362
+        y: 601.7748911069491
+      positionAbsolute:
+        x: 1616.3456936738362
+        y: 601.7748911069491
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          label:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          llm_description: Feature name
+          max: null
+          min: null
+          name: FeatureName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          label:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          llm_description: Feature values
+          max: null
+          min: null
+          name: FeatureValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          FeatureName: ''
+          FeatureValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 对象赋值 | Matching-1
+        tool_configurations: {}
+        tool_description: 特征设置
+        tool_label: 特征设置
+        tool_name: catia-feature-setting
+        tool_node_version: '2'
+        tool_parameters:
+          FeatureName:
+            type: mixed
+            value: Matching-1
+          FeatureValue:
+            type: mixed
+            value: BEAM-FTR TEMPLE/Untrimed_Surface/Basic_Surface/BasicShape/Result/Matching-1
+        type: tool
+      height: 53
+      id: '17569939022800'
+      position:
+        x: 406.9724298629469
+        y: 393.1360271397499
+      positionAbsolute:
+        x: 406.9724298629469
+        y: 393.1360271397499
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          label:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          llm_description: Feature name
+          max: null
+          min: null
+          name: FeatureName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          label:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          llm_description: Feature values
+          max: null
+          min: null
+          name: FeatureValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          FeatureName: ''
+          FeatureValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 对象赋值 | Matching-2
+        tool_configurations: {}
+        tool_description: 特征设置
+        tool_label: 特征设置
+        tool_name: catia-feature-setting
+        tool_node_version: '2'
+        tool_parameters:
+          FeatureName:
+            type: mixed
+            value: Matching-2
+          FeatureValue:
+            type: mixed
+            value: BEAM-FTR TEMPLE/Untrimed_Surface/Basic_Surface/BasicShape/Result/Matching-2
+        type: tool
+      height: 53
+      id: '17569939029490'
+      position:
+        x: 406.9724298629469
+        y: 475.7616366578619
+      positionAbsolute:
+        x: 406.9724298629469
+        y: 475.7616366578619
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          label:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          llm_description: Feature name
+          max: null
+          min: null
+          name: FeatureName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          label:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          llm_description: Feature values
+          max: null
+          min: null
+          name: FeatureValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          FeatureName: ''
+          FeatureValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 对象赋值 | ToReinforcement
+        tool_configurations: {}
+        tool_description: 特征设置
+        tool_label: 特征设置
+        tool_name: catia-feature-setting
+        tool_node_version: '2'
+        tool_parameters:
+          FeatureName:
+            type: mixed
+            value: ToReinforcement
+          FeatureValue:
+            type: mixed
+            value: BEAM-FTR TEMPLE/Untrimed_Surface/Basic_Surface/BasicShape/Result/ToReinforcement
+        type: tool
+      height: 53
+      id: '17569939047420'
+      position:
+        x: 406.9724298629469
+        y: 554.1159922540428
+      positionAbsolute:
+        x: 406.9724298629469
+        y: 554.1159922540428
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          label:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          llm_description: Feature name
+          max: null
+          min: null
+          name: FeatureName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          label:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          llm_description: Feature values
+          max: null
+          min: null
+          name: FeatureValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          FeatureName: ''
+          FeatureValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 对象赋值 | CenterLine
+        tool_configurations: {}
+        tool_description: 特征设置
+        tool_label: 特征设置
+        tool_name: catia-feature-setting
+        tool_node_version: '2'
+        tool_parameters:
+          FeatureName:
+            type: mixed
+            value: CenterLine
+          FeatureValue:
+            type: mixed
+            value: BEAM-FTR TEMPLE/Untrimed_Surface/Basic_Surface/BasicShape/Result/CenterLine
+        type: tool
+      height: 53
+      id: '17569939067510'
+      position:
+        x: 406.9724298629469
+        y: 642.5230222758265
+      positionAbsolute:
+        x: 406.9724298629469
+        y: 642.5230222758265
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          label:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          llm_description: Feature name
+          max: null
+          min: null
+          name: FeatureName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          label:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          llm_description: Feature values
+          max: null
+          min: null
+          name: FeatureValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          FeatureName: ''
+          FeatureValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 对象赋值 | Fillet-CAS
+        tool_configurations: {}
+        tool_description: 特征设置
+        tool_label: 特征设置
+        tool_name: catia-feature-setting
+        tool_node_version: '2'
+        tool_parameters:
+          FeatureName:
+            type: mixed
+            value: Fillet
+          FeatureValue:
+            type: mixed
+            value: BEAM-FTR TEMPLE/Untrimed_Surface/Basic_Surface/BasicShape/Result/ShapeResult
+        type: tool
+      height: 53
+      id: '17569939092450'
+      position:
+        x: 406.9724298629469
+        y: 730.9300522976106
+      positionAbsolute:
+        x: 406.9724298629469
+        y: 730.9300522976106
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter name
+            ja_JP: parameter name
+            pt_BR: parameter name
+            zh_Hans: 参数名
+          label:
+            en_US: Parameter name
+            ja_JP: Parameter name
+            pt_BR: Parameter name
+            zh_Hans: 参数名
+          llm_description: parameter name
+          max: null
+          min: null
+          name: ParameterName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter values
+            ja_JP: parameter values
+            pt_BR: parameter values
+            zh_Hans: 参数值
+          label:
+            en_US: Parameter values
+            ja_JP: Parameter values
+            pt_BR: Parameter values
+            zh_Hans: 参数值
+          llm_description: parameter values
+          max: null
+          min: null
+          name: ParameterValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          ParameterName: ''
+          ParameterValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 参数设置 | Distance_ToCenter
+        tool_configurations: {}
+        tool_description: 参数设置
+        tool_label: 参数设置
+        tool_name: catia-param-setting
+        tool_node_version: '2'
+        tool_parameters:
+          ParameterName:
+            type: mixed
+            value: Distance_ToCenter
+          ParameterValue:
+            type: mixed
+            value: 15 mm
+        type: tool
+      height: 53
+      id: '17569939916900'
+      position:
+        x: 406.9724298629469
+        y: 811.4200348547569
+      positionAbsolute:
+        x: 406.9724298629469
+        y: 811.4200348547569
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter name
+            ja_JP: parameter name
+            pt_BR: parameter name
+            zh_Hans: 参数名
+          label:
+            en_US: Parameter name
+            ja_JP: Parameter name
+            pt_BR: Parameter name
+            zh_Hans: 参数名
+          llm_description: parameter name
+          max: null
+          min: null
+          name: ParameterName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter values
+            ja_JP: parameter values
+            pt_BR: parameter values
+            zh_Hans: 参数值
+          label:
+            en_US: Parameter values
+            ja_JP: Parameter values
+            pt_BR: Parameter values
+            zh_Hans: 参数值
+          llm_description: parameter values
+          max: null
+          min: null
+          name: ParameterValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          ParameterName: ''
+          ParameterValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 参数设置 | Width_Rib
+        tool_configurations: {}
+        tool_description: 参数设置
+        tool_label: 参数设置
+        tool_name: catia-param-setting
+        tool_node_version: '2'
+        tool_parameters:
+          ParameterName:
+            type: mixed
+            value: Width_Rib
+          ParameterValue:
+            type: mixed
+            value: 11 mm
+        type: tool
+      height: 53
+      id: '17569939951040'
+      position:
+        x: 406.9724298629469
+        y: 886.6319857688115
+      positionAbsolute:
+        x: 406.9724298629469
+        y: 886.6319857688115
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: true
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: parameter
+            ja_JP: parameter
+            pt_BR: parameter
+            zh_Hans: 参数值
+          label:
+            en_US: Parameter values
+            ja_JP: Parameter values
+            pt_BR: Parameter values
+            zh_Hans: 参数值
+          llm_description: parameter
+          max: null
+          min: null
+          name: Parameter
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: OutputLocation
+            ja_JP: OutputLocation
+            pt_BR: OutputLocation
+            zh_Hans: OutputLocation
+          label:
+            en_US: Output Location
+            ja_JP: Output Location
+            pt_BR: Output Location
+            zh_Hans: Output Location
+          llm_description: OutputLocation
+          max: null
+          min: null
+          name: OutputLocation
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: Select template
+            ja_JP: Select template
+            pt_BR: Select template
+            zh_Hans: 选择模板
+          label:
+            en_US: Select template
+            ja_JP: Select template
+            pt_BR: Select template
+            zh_Hans: 选择模板
+          llm_description: Select template
+          max: null
+          min: null
+          name: Template
+          options:
+          - icon: ''
+            label:
+              en_US: 创建基本结构
+              ja_JP: 创建基本结构
+              pt_BR: 创建基本结构
+              zh_Hans: 创建基本结构
+            value: 创建基本结构
+          - icon: ''
+            label:
+              en_US: 创建加强筋结构
+              ja_JP: 创建加强筋结构
+              pt_BR: 创建加强筋结构
+              zh_Hans: 创建加强筋结构
+            value: 创建加强筋结构
+          - icon: ''
+            label:
+              en_US: 裁切边界
+              ja_JP: 裁切边界
+              pt_BR: 裁切边界
+              zh_Hans: 裁切边界
+            value: 裁切边界
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: select
+        params:
+          OutputLocation: ''
+          Parameter: ''
+          Template: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 模板调用 | 创建加强筋结构
+        tool_configurations:
+          OutputLocation:
+            type: mixed
+            value: BEAM-FTR TEMPLE/Untrimed_Surface/Basic_Surface
+          Parameter:
+            type: mixed
+            value: '{{#17569939022800.text#}}{{#17569939029490.text#}}{{#17569939047420.text#}}{{#17569939067510.text#}}{{#17569939092450.text#}}{{#17569939916900.text#}}{{#17569939951040.text#}}{{#17569934699710.text#}}{{#1756993460079.text#}}{{#17569934715940.text#}}'
+          Template:
+            type: constant
+            value: 创建加强筋结构
+        tool_description: 模板调用
+        tool_label: 模板调用
+        tool_name: catia-model
+        tool_node_version: '2'
+        tool_parameters: {}
+        type: tool
+      height: 141
+      id: '1756994044223'
+      position:
+        x: 834.5457002694955
+        y: 642.5230222758265
+      positionAbsolute:
+        x: 834.5457002694955
+        y: 642.5230222758265
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: aecbcb73-2e3d-4fc9-813f-127390d803b9
+            value: ERROR
+            varType: string
+            variable_selector:
+            - '1756994044223'
+            - text
+          id: 'true'
+          logical_operator: and
+        desc: ''
+        selected: false
+        title: 完成判断 | 创建加强筋结构
+        type: if-else
+      height: 125
+      id: '17569942174110'
+      position:
+        x: 1156.1293121884255
+        y: 642.5230222758265
+      positionAbsolute:
+        x: 1156.1293121884255
+        y: 642.5230222758265
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          label:
+            en_US: Feature name
+            ja_JP: Feature name
+            pt_BR: Feature name
+            zh_Hans: 特征名
+          llm_description: Feature name
+          max: null
+          min: null
+          name: FeatureName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          label:
+            en_US: Feature values
+            ja_JP: Feature values
+            pt_BR: Feature values
+            zh_Hans: 特征值
+          llm_description: Feature values
+          max: null
+          min: null
+          name: FeatureValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          FeatureName: ''
+          FeatureValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 对象赋值 | ToTrim
+        tool_configurations: {}
+        tool_description: 特征设置
+        tool_label: 特征设置
+        tool_name: catia-feature-setting
+        tool_node_version: '2'
+        tool_parameters:
+          FeatureName:
+            type: mixed
+            value: ToTrim
+          FeatureValue:
+            type: mixed
+            value: BEAM-FTR TEMPLE/Untrimed_Surface/Basic_Surface/Reinforcement/Result/ToTrim
+        type: tool
+      height: 53
+      id: '17569942760340'
+      position:
+        x: 406.9724298629469
+        y: 1070.732286556803
+      positionAbsolute:
+        x: 406.9724298629469
+        y: 1070.732286556803
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter name
+            ja_JP: parameter name
+            pt_BR: parameter name
+            zh_Hans: 参数名
+          label:
+            en_US: Parameter name
+            ja_JP: Parameter name
+            pt_BR: Parameter name
+            zh_Hans: 参数名
+          llm_description: parameter name
+          max: null
+          min: null
+          name: ParameterName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter values
+            ja_JP: parameter values
+            pt_BR: parameter values
+            zh_Hans: 参数值
+          label:
+            en_US: Parameter values
+            ja_JP: Parameter values
+            pt_BR: Parameter values
+            zh_Hans: 参数值
+          llm_description: parameter values
+          max: null
+          min: null
+          name: ParameterValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          ParameterName: ''
+          ParameterValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 参数设置 | Length_Overall
+        tool_configurations: {}
+        tool_description: 参数设置
+        tool_label: 参数设置
+        tool_name: catia-param-setting
+        tool_node_version: '2'
+        tool_parameters:
+          ParameterName:
+            type: mixed
+            value: Length_Overall
+          ParameterValue:
+            type: mixed
+            value: 1600mm
+        type: tool
+      height: 53
+      id: '17569942810530'
+      position:
+        x: 406.9724298629469
+        y: 1148.5832532924037
+      positionAbsolute:
+        x: 406.9724298629469
+        y: 1148.5832532924037
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: false
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter name
+            ja_JP: parameter name
+            pt_BR: parameter name
+            zh_Hans: 参数名
+          label:
+            en_US: Parameter name
+            ja_JP: Parameter name
+            pt_BR: Parameter name
+            zh_Hans: 参数名
+          llm_description: parameter name
+          max: null
+          min: null
+          name: ParameterName
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: llm
+          human_description:
+            en_US: parameter values
+            ja_JP: parameter values
+            pt_BR: parameter values
+            zh_Hans: 参数值
+          label:
+            en_US: Parameter values
+            ja_JP: Parameter values
+            pt_BR: Parameter values
+            zh_Hans: 参数值
+          llm_description: parameter values
+          max: null
+          min: null
+          name: ParameterValue
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        params:
+          ParameterName: ''
+          ParameterValue: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: false
+        title: 参数设置 | Width_Middle
+        tool_configurations: {}
+        tool_description: 参数设置
+        tool_label: 参数设置
+        tool_name: catia-param-setting
+        tool_node_version: '2'
+        tool_parameters:
+          ParameterName:
+            type: mixed
+            value: Width_Middle
+          ParameterValue:
+            type: mixed
+            value: 95 mm
+        type: tool
+      height: 53
+      id: '17569942831950'
+      position:
+        x: 406.9724298629469
+        y: 1227.7537279387773
+      positionAbsolute:
+        x: 406.9724298629469
+        y: 1227.7537279387773
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        desc: ''
+        is_team_authorization: true
+        output_schema: null
+        paramSchemas:
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: parameter
+            ja_JP: parameter
+            pt_BR: parameter
+            zh_Hans: 参数值
+          label:
+            en_US: Parameter values
+            ja_JP: Parameter values
+            pt_BR: Parameter values
+            zh_Hans: 参数值
+          llm_description: parameter
+          max: null
+          min: null
+          name: Parameter
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: OutputLocation
+            ja_JP: OutputLocation
+            pt_BR: OutputLocation
+            zh_Hans: OutputLocation
+          label:
+            en_US: Output Location
+            ja_JP: Output Location
+            pt_BR: Output Location
+            zh_Hans: Output Location
+          llm_description: OutputLocation
+          max: null
+          min: null
+          name: OutputLocation
+          options: []
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: string
+        - auto_generate: null
+          default: null
+          form: form
+          human_description:
+            en_US: Select template
+            ja_JP: Select template
+            pt_BR: Select template
+            zh_Hans: 选择模板
+          label:
+            en_US: Select template
+            ja_JP: Select template
+            pt_BR: Select template
+            zh_Hans: 选择模板
+          llm_description: Select template
+          max: null
+          min: null
+          name: Template
+          options:
+          - icon: ''
+            label:
+              en_US: 创建基本结构
+              ja_JP: 创建基本结构
+              pt_BR: 创建基本结构
+              zh_Hans: 创建基本结构
+            value: 创建基本结构
+          - icon: ''
+            label:
+              en_US: 创建加强筋结构
+              ja_JP: 创建加强筋结构
+              pt_BR: 创建加强筋结构
+              zh_Hans: 创建加强筋结构
+            value: 创建加强筋结构
+          - icon: ''
+            label:
+              en_US: 裁切边界
+              ja_JP: 裁切边界
+              pt_BR: 裁切边界
+              zh_Hans: 裁切边界
+            value: 裁切边界
+          placeholder: null
+          precision: null
+          required: true
+          scope: null
+          template: null
+          type: select
+        params:
+          OutputLocation: ''
+          Parameter: ''
+          Template: ''
+        provider_id: tecwin/catia-plugin/catia-plugin
+        provider_name: tecwin/catia-plugin/catia-plugin
+        provider_type: builtin
+        selected: true
+        title: 模板调用 | 裁切边界
+        tool_configurations:
+          OutputLocation:
+            type: mixed
+            value: BEAM-FTR TEMPLE/Untrimed_Surface/Basic_Surface
+          Parameter:
+            type: mixed
+            value: '{{#17569942760340.text#}}{{#17569942810530.text#}}{{#17569942831950.text#}}{{#17569934715940.text#}}{{#17569939067510.text#}}'
+          Template:
+            type: constant
+            value: 裁切边界
+        tool_description: 模板调用
+        tool_label: 模板调用
+        tool_name: catia-model
+        tool_node_version: '2'
+        tool_parameters: {}
+        type: tool
+      height: 141
+      id: '17569943124220'
+      position:
+        x: 828.2916226314262
+        y: 1106.4226598392074
+      positionAbsolute:
+        x: 828.2916226314262
+        y: 1106.4226598392074
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: aecbcb73-2e3d-4fc9-813f-127390d803b9
+            value: ERROR
+            varType: string
+            variable_selector:
+            - '17569943124220'
+            - text
+          id: 'true'
+          logical_operator: and
+        desc: ''
+        selected: false
+        title: 完成判断 | 裁切边界
+        type: if-else
+      height: 125
+      id: '17569944207730'
+      position:
+        x: 1151.5821624888943
+        y: 1106.4226598392074
+      positionAbsolute:
+        x: 1151.5821624888943
+        y: 1106.4226598392074
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    - data:
+        answer: 完成操作
+        desc: ''
+        selected: false
+        title: 成功回复
+        type: answer
+        variables: []
+      height: 101
+      id: '1756994459515'
+      position:
+        x: 1602.704244575243
+        y: 1148.5832532924037
+      positionAbsolute:
+        x: 1602.704244575243
+        y: 1148.5832532924037
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 243
+    viewport:
+      x: 155.47647772870596
+      y: -341.496428098065
+      zoom: 0.7578582832552011

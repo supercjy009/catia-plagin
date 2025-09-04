@@ -27,6 +27,19 @@ parameters:
       pt_BR: "parameter"
     llm_description: "parameter"
     form: form
+  - name: OutputLocation
+    type: string
+    required: true
+    label:
+      en_US: Output Location
+      zh_Hans: Output Location
+      pt_BR: Output Location
+    human_description:
+      en_US: "OutputLocation"
+      zh_Hans: "OutputLocation"
+      pt_BR: "OutputLocation"
+    llm_description: "OutputLocation"
+    form: form
   - name: Template
     type: select
     required: true

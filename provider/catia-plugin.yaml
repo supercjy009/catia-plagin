@@ -12,12 +12,12 @@ identity:
   icon: "icon.svg"
 
 credentials_for_provider:
-  host: # catia HOST
+  api_url: # catia HOST
     type: text-input # 输入类型为普通文本
     required: false
     label:  # 在 Dify UI 中显示的标签 (支持多语言)
-        en_US: Catia Server Host IP
-        zh_Hans: Catia Server主机IP
+        en_US: Catia Server Api Url
+        zh_Hans: Catia Server Api地址
 
 #########################################################################################
 # If you want to support OAuth, you can uncomment the following code.
@@ -62,6 +62,7 @@ credentials_for_provider:
 #         en_US: "Access Token"
 
 tools:
+  - tools/catia-feature-setting.yaml
   - tools/catia-param-setting.yaml
   - tools/catia-model.yaml
 extra:
