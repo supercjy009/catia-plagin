@@ -15,11 +15,24 @@ class ApiRequest:
     ):
         headers = {
             "Content-Type": "application/json",
+            "Tecwin3DEUnitId": "CreateUdf"
         }
-        res = httpx.request(method=method, url=url, headers=headers, json=payload, params=params, timeout=30).json()
-        if res.get("code") != 200:
-            raise Exception(res)
-        return res
+        response = httpx.request(method=method, url=url, headers=headers, json=payload, params=params, timeout=30)
+        print(f"✅ response status>>>>>>>>{response.status_code}")
+
+        # 检查响应内容类型是否为JSON
+        content_type = response.headers.get('content-type', '')
+        if response.status_code != 200:
+            raise Exception(response.text)
+        if 'application/json' in content_type:
+            res = response.json()
+            print(f"✅ res>>>>>>>>{res}")
+            return res
+        else:
+            # 如果不是JSON，则返回文本内容
+            res = response.text
+            print(f"✅ res>>>>>>>>{res}")
+            return res
 
     def callModelingTemplate(
         self,
@@ -59,8 +72,5 @@ class ApiRequest:
         #         fields_list = json.loads(fields)
         #     except json.JSONDecodeError:
         #         raise ValueError("The input string is not valid JSON")
-        res: dict = self._send_request(api_url, params={}, payload=payload)
-        if "data" in res:
-            data: dict = res.get("data", {})
-            return data
+        res = self._send_request(api_url, params={}, payload=payload)
         return res

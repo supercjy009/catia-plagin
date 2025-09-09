@@ -3,6 +3,7 @@ import json
 import re
 import time
 from typing import Any
+import requests
 
 from dify_plugin import Tool
 from dify_plugin.entities.tool import ToolInvokeMessage
@@ -23,6 +24,15 @@ class CatiaModelTool(Tool):
             yield self.create_text_message("Error: Catia Server Host IP 未配置.")
         if not api_url.startswith(("http://", "https://")):
             api_url = "http://" + api_url
+        ### 测试http://192.168.31.114:5000/test这个地址是否能联通
+        # url = "http://192.168.31.114:5000/test"
+
+        # try:
+        #     response = requests.get(url, timeout=5)  # 设置超时时间为5秒
+        #     print(f"✅ 连接成功！状态码：{response.status_code}")
+        #     print(f"响应内容（前200字符）：{response.text[:200]}")
+        # except requests.exceptions.RequestException as e:
+        #     print(f"❌ 连接失败！错误信息：{e}")
 
         parameter = tool_parameters.get("Parameter", "No Parameter provided")
         # logger.info(f"get param.{parameter}")
@@ -39,6 +49,7 @@ class CatiaModelTool(Tool):
         template = tool_parameters.get("Template", "No Template provided")
         output_location = tool_parameters.get("OutputLocation", "No OutputLocation provided")
         api = ApiRequest(api_url)
+        print(f"✅ parsed_data：{parsed_data}")
         # 模拟耗时1秒
         time.sleep(1)
         # 根据template进行不同的处理
